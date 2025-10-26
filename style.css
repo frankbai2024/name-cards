@@ -1,0 +1,103 @@
+.avatar {
+  display: inline-block;
+  /* 头像宽度 */
+  width: 50px;
+  /* 头像高度 */
+  height: 50px;
+  /* 头像圆角 */
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.personal_info {
+  /* background-color: aqua; */
+  vertical-align: top;
+  display: inline-block;
+  text-align: left;
+  /* padding-top: 4px; */
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  width: 280px;
+  height: 150px;
+
+  background-repeat: no-repeat; /* prevents tiling */
+  background-size: cover; /*scales image to cover the area */
+  background-position: center; /* centers the image */
+
+  /* background-attachment: fixed; */
+  /* background-color: aquamarine; */
+  box-sizing: border-box;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: rgb(50 50 93/25%) 0px 2px 60px -12px,
+    rgb(0 0 0 / 30%) 0px 18px 36px -18px;
+}
+
+.name {
+  font-size: 15px;
+  color: #333;
+  margin: 5px;
+}
+.title {
+  font-size: 10px;
+  color: rgb(12, 11, 11);
+  font-weight: bold;
+  margin-right: 5px;
+}
+.company {
+  font-size: 10px;
+  font-weight: bold;
+  color: blue;
+}
+
+.stars {
+  color: goldenrod;
+  vertical-align: top;
+}
+.stars2 {
+  color: linear-gradient(lightgrey, lightblue);
+  vertical-align: top;
+}
+.description {
+  font-size: 12px;
+  color: rgb(14, 13, 13);
+}
+.wrapper {
+  display: flex;
+  /* 根据宽度自动换行 */
+  flex-wrap: wrap;
+}
+
+.learn-more {
+  color: #fff;
+  background-color: transparent;
+  border: #fff solid 1px;
+  border-radius: 5px;
+}
+.learn-more:hover {
+  cursor: pointer;
+}
+
+.card:first-child {
+  background-image: linear-gradient(rgba(231, 81, 81, 0.4), rgba(0, 0, 0, 0.4)),
+    url("img/bg-1.avif");
+}
+.card:nth-child(2) {
+  background-image: url("img/bg-2.avif");
+}
+.card:last-child {
+  background-image: linear-gradient(rgba(231, 81, 81, 0.4), rgba(0, 0, 0, 0.4));
+}
+
+.card:first-child::before {
+  content: "";
+  opacity: 0.1;
+}
